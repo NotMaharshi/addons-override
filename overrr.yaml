@@ -4,4 +4,4 @@ ingressNginx:
 #If you want to use extra values for ingress-nginx addons, use the following configuration:
   extraValues: 
     controller:
-      replicaCount: 4
+      replicaCount: 1
