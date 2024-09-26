@@ -1,5 +1,7 @@
-controller:
-  replicaCount: 4 # Recent change
-  service:
-   annotations: 
-     service.beta.kubernetes.io/azure-load-balancer-health-probe-request-path: "/healthz"
+# Nginx Values
+ingressNginx:
+  enable: true
+#If you want to use extra values for ingress-nginx addons, use the following configuration:
+  extraValues: 
+    controller:
+      replicaCount: 4
